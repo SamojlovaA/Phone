@@ -8,9 +8,11 @@ public class Main {
         long limit = 1000;
         if (amount < limit) {
             bonus = 0;
+            int score = 100 + long amount;
         }
-        if (amount > limit ) {
+        else (amount > limit ) {
             amount = limit;
+            int score = 100 + long amount + long bonus;
         }
         System.out.println(bonus);
     }
